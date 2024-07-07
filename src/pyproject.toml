@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "synthetic-open-schema-model"
-version = "0.0.2"
+version = "0.1.0"
 description = ""
 authors = ["Checks Dev <info@ideatives.com>"]
 readme = "README.md"

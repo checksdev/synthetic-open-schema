@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "synthetic-open-schema-model"
+version = "0.0.2"
+description = ""
+authors = ["Checks Dev <info@ideatives.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^2.8.2"
+croniter = "^2.0.5"
+pyyaml = "^6.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+pytest-cov = "^5.0.0"
+pytest-watch = "^4.2.0"
+pre-commit = "^3.7.1"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

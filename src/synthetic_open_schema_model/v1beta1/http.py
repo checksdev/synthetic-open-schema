@@ -8,19 +8,19 @@ from ..base import BaseAssertion, Check, CheckSpec
 Headers = dict[str, str]
 
 
-class HttpExpectType(str, Enum):
+class HttpAssertionType(str, Enum):
     duration = "duration"
     size = "size"
     statusCode = "statusCode"
-    text = "text"
-    headers = "headers"
+    body = "body"
+    header = "header"
 
 
-class HttpExpect(BaseAssertion):
-    type: str
+class HttpAssertion(BaseAssertion):
+    type: HttpAssertionType
 
 
-HttpExpectList = List[HttpExpect]
+HttpAssertionList = List[HttpAssertion]
 
 
 class HttpCheckSpec(CheckSpec):
@@ -29,7 +29,7 @@ class HttpCheckSpec(CheckSpec):
     url: HttpUrl
     method: Optional[str] = "GET"
     headers: Optional[Headers] = {}
-    checks: Optional[HttpExpectList] = []
+    checks: HttpAssertionList
 
     @field_serializer("url")
     def serialize_url(self, url: HttpUrl) -> str:

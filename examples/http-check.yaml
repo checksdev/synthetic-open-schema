@@ -13,13 +13,13 @@ spec:
   interval: 1m
   retries: 3
   checks:
-    - type: status
+    - type: statusCode
       operator: equals
       value: 200
     - type: body
       operator: contains
       value: "OK"
-    - type: latency
+    - type: duration
       operator: lessThan
       value: 500ms
     - type: header

@@ -1,6 +1,6 @@
 # Synthetic Open Schema
 
-Welcome to the Synthetic Open Schema by Checks.dev! This repository hosts an open-source, versioned YAML-based schema designed for defining and managing synthetic monitors. We are currently in version `v1beta1`, aimed at providing a unified and flexible format for various types of synthetic checks including HTTP, TCP, SSL, and scripted browser scenarios.
+Welcome to the Synthetic Open Schema by [Checks.dev](https://checks.dev)! This repository hosts an open-source, versioned YAML-based schema designed for defining and managing synthetic monitors. We are currently in version `v1beta1`, aimed at providing a unified and flexible format for various types of synthetic checks including HTTP, TCP, SSL, and scripted browser scenarios.
 
 ## Rationale
 
